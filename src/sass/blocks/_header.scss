@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        width: 96px;
+        img {
+            width: 100%;
+        }
+    }
+    &__menu {
+        width: 600px;
+        ul {
+        display: flex;
+        justify-content: space-between;
+            li {
+                list-style-type: none;
+                padding-right: 11px;
+                border-right: 1px dotted rgba($color: $white-color, $alpha: .4);
+                a {
+                    color: $white-color;
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+                a:hover {
+                    color: $main-color; 
+                }
+            }
+            li:nth-child(6) {
+                padding-right: 0;
+                border-right: none;
+            }
+        }
+    }
+    &__contacts {
+        width: 340px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__question {
+        color: $white-color;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: right;
+    }
+    &__phone {
+        color: $white-color;
+        font-family: Roboto;
+        font-size: 19px;
+        font-weight: 700;
+        &:hover {
+            color: $white-color;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.button {
+    width: 160px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    background-color: $main-color;
+    color: $white-color;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    &:hover {
+        box-shadow: inset 0 0 0 200px rgba(66, 17, 17, 0.1);
+    }
+    &:focus {
+        outline: none;
+    }
+    &_center {
+        display: block;
+        margin: 0 auto;
+        width: 230px;
+        height: 57px;
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 17px;
+        font-weight: 700;
+    }
+}

@@ -44,8 +44,8 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('fonts', function () {
-    return gulp.src("src/**/*.+(eot|ttf|woff|woff2)")
-        .pipe(gulp.dest('dist/'));
+    return gulp.src("src/fonts/*.+(eot|ttf|woff|woff2)")
+        .pipe(gulp.dest('dist/fonts'));
 });
 
 gulp.task('icons', function () {
