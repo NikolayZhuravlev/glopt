@@ -1,0 +1,102 @@
+.price {
+    padding: 53px 0 58px 0;
+    min-height: 952px;
+}
+.price-card {
+    margin: 34px 0 55px 0;
+    display: flex;
+    justify-content: space-between;
+    &__wrapper {
+        position: relative;
+        width: 267px;
+        height: 357px;
+        border: 1px solid #e9e9e9;
+        box-sizing: border-box;
+    }
+    &__face {   
+        display: none;
+        padding: 0px 12px;
+        flex-direction: column;
+        align-items: center;
+        &_active {
+            display: flex;
+        }
+    }
+    &__title {
+        text-align: center;
+        padding-top: 24px;
+        margin: 0;
+        height: 61px;
+        width: 267px;
+        background-color: #25333c;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white-color;
+    }
+    &__img {
+        margin-top: 14px;
+        display: flex;
+        justify-content: center;
+    }
+    &__deadline {
+        margin-top: 12px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #2e2e2e;
+    }
+    &__price {
+        margin-top: 6px;
+        text-align: center;
+        line-height: 1;
+        font-size: 28px;
+        color: $main-color;
+        font-weight: 400;
+    }
+    &__descr {
+        margin: 15px 0 20px 0;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #2e2e2e;
+    }
+    &__back {
+        display: none;
+        padding-top: 25px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #2e2e2e;
+        &_active {
+            display: block;
+        }
+    }
+    &__list {
+        list-style-type: none;
+        li {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                background-color: $main-color;
+                top: 9px;
+                left: -13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1201px) {
+    .price-card {
+        width: 592px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        &__wrapper {
+            margin-top: 25px;
+        }
+    }
+}

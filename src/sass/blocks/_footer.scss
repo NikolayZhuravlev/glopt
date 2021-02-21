@@ -1,0 +1,61 @@
+.footer {
+    margin-top: -10px;
+    min-height: 201px;
+    padding: 24px 0 28px 0;
+    background-color: #25333c;
+    &__wrapper {
+        width: 1170px;
+        margin: 0 auto;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__devider {
+        margin: 0 auto;
+        margin-top: 26px;
+        width: 100%;
+        background-color: $white-color;
+        height: 3px;
+        opacity: 0.2;
+    }
+    &__bottom {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__year {
+        opacity: 0.6;
+        font-size: 13px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    &__politic {
+        padding-right: 190px;
+        font-size: 13px;
+        font-weight: 300;
+        text-decoration: underline;
+        color: $main-color;
+        cursor: pointer;
+    }
+    &__created {
+        position: relative;
+        padding-right: 40px;
+        opacity: 0.6;
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 300;
+        color: #ffffff;
+        img {
+            position: absolute;
+            top: -12px;
+            right: 0px;
+        }
+    }
+}
+@media (max-width: 1201px) {
+    .footer__wrapper {
+        width: 900px;
+    }
+}

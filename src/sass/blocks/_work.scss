@@ -1,0 +1,47 @@
+.work {
+    min-height: 619px;
+    padding: 51px 0 57px 0;
+    &__cards {
+        margin-top: 37px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card {
+        width: 360px;
+    }
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+    &__descr {
+        margin-top: 27px;
+        text-align: center;
+        width: 360px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #3a3a3a;
+        line-height: 22px;
+        span {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1;
+            color: #ec644b;
+        }
+    }
+}
+
+@media (max-width: 1201px) {
+    .work {
+        &__card {
+            width: 275px;
+        }
+        &__descr {
+            width: 275px;
+            font-size: 13px;
+            span {
+                font-size: 17px;
+            }
+        }
+    }
+}

@@ -4,9 +4,19 @@
     align-items: center;
     &__logo {
         width: 96px;
+        &_footer {
+            width: 68px;
+        }
         img {
             width: 100%;
         }
+    }
+    &__descr {
+        align-self: center;
+        margin-right: 230px;
+        font-size: 16px;
+        font-weight: 700;
+        color: $white-color;
     }
     &__menu {
         width: 600px;
@@ -51,6 +61,36 @@
         font-weight: 700;
         &:hover {
             color: $white-color;
+        }
+    }
+}
+
+@media (max-width: 1201px){
+    .header {
+        &__logo {
+            width: 78px;
+        }
+        &__menu {
+            width: 440px;
+            ul{
+                padding-left: 0;
+                li {
+                    padding-right: 4px;
+                    line-height: 1;
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        &__contacts {
+            width: 300px;
+        }
+        &__phone {
+            font-size: 16px;
+        }
+        &__descr {
+            margin-right: 60px;
         }
     }
 }

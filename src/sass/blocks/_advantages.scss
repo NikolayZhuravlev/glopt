@@ -3,6 +3,7 @@
     background-color: #f3f3f3;
     padding: 58px 0 15px 0;
     &__wrapper {
+        margin-top: 32px;
         display: flex;
         justify-content: space-between;
     }
@@ -22,13 +23,31 @@
     }
     &__descr {
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 400;
         color: #3a3a3a;
         span {
             font-size: 16px;
             font-weight: 700;
             color: $main-color;
             padding-bottom: 13px;
+        }
+    }
+}
+
+@media (max-width: 1201px) {
+    .advantages{
+        &__icon {
+            width: 430px;
+        }
+        &__img {
+            width: 60px;
+            margin-right: 13px;
+        }
+        &__descr {
+            font-size: 13px;
+            span {
+                font-size: 15px;
+            }
         }
     }
 }

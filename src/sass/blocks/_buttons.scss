@@ -17,11 +17,29 @@
     &_center {
         display: block;
         margin: 0 auto;
+        margin-top: 39px;
         width: 230px;
         height: 57px;
-        font-family: Roboto;
         font-size: 15px;
-        line-height: 17px;
         font-weight: 700;
+    }
+    &_price {
+        position: absolute;
+        bottom: 22px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1201px){
+    .button {
+        width: 145px;
+        height: 36px;
+        font-size: 11px;
+        &_center {
+            width: 210px;
+            height: 45px;
+            font-size: 15px;
+        }
     }
 }

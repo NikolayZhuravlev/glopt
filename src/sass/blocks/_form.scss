@@ -1,0 +1,106 @@
+.form {
+    margin: 0 auto;
+    margin-top: 55px;
+    &__header {
+        margin-bottom: 71px;
+        text-align: center;
+        font-size: 28px;
+        line-height: 1;
+        font-weight: 400;
+        color: #3a3a3a;
+    }
+    &__wrapper {
+        position: relative;
+        padding-bottom: 40px;
+        width: 100%;
+        min-height: 166px;
+        border: solid #898989;
+        border-width: 1px 3px 1px 3px;
+        &_questions {
+            padding: 15px 0 25px 0;
+            width: 100%;
+            min-height: 230px;
+            background-color: rgba($color: $white-color, $alpha: .7);
+        }
+    }
+    &__imgWrapper {
+        padding: 0 10px 0 10px;
+        background-color: $white-color;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__img {
+        width: 102px;
+        height: 102px;
+        border: 1px solid $main-color;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__form {
+        margin: 0 auto;
+        margin-top: 66px;
+        width: 822px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_questions {
+            margin-top: 0;
+        }
+    }
+    &__input {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        input {
+            width: 270px;
+            height: 47px;
+            padding-left: 26px;
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 25px;
+        }
+        &_4 {
+            margin-top: 8px;
+            input {
+                width: 822px;
+                height: 73px;
+                border-radius: 10px; 
+            } 
+        }
+    } 
+
+    &__button {
+        margin: 0 auto;
+        margin-top: 20px;
+        &_paddingWhite { 
+            position: absolute;  
+            bottom: -23px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0 10px 0 10px;
+            background-color: white;
+        }
+    }
+}
+
+@media (max-width: 1201px) {
+    .form {
+        width: 592px;
+        &__wrapper {
+            margin: 0 auto;
+        }
+        &__form {
+            flex-direction: column;
+            width: 100%;
+        }
+        &__input {
+            margin: 0 auto;
+            margin-top: 10px;
+            input {
+                width: 400px;
+            }
+        }
+    }
+}

@@ -1,11 +1,26 @@
 @import "libs/bootstrap-reboot.min";
 @import "libs/fonts";
+@import "libs/animate";
 @import "base/variables";
 @import "blocks/header";
 @import "blocks/promo";
 @import "blocks/buttons";
 @import "blocks/advantages";
 @import "blocks/title";
+@import "blocks/work";
+@import "blocks/insert";
+@import "blocks/price";
+@import "blocks/form";
+@import "blocks/items";
+@import "blocks/schema";
+@import "blocks/reviews";
+@import "libs/slick";
+@import "blocks/questions";
+@import "blocks/arrow";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/scrollUp";
+@import "blocks/modal";
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -17,4 +32,12 @@
 }
 a {
     text-decoration: none;
+}
+
+@media (max-width: 1201px){
+    .container {
+        width: 900px;
+        position: relative;
+        margin: 0 auto;
+    }
 }

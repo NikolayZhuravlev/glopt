@@ -1,8 +1,50 @@
 .title {
     text-align: center;
-    margin-bottom: 32px;
+    margin: 0;
     font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
+    line-height: 1;
     color: #2e2e2e;
+    &_white {
+        color: $white-color;
+        text-transform: none;
+    }
+}
+.divider {
+    width: 148px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: $main-color;
+}
+.descr {
+    width: 880px;
+    margin: 0 auto;
+    margin-top: 17px;
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #2e2e2e;
+    text-align: center;
+    &_white {
+        width: 1010px;
+        color: $white-color;
+        font-family: Roboto;
+        font-size: 19px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 1201px) {
+    .title {
+        font-size: 25px;
+    }
+    .descr {
+        font-size: 20px;
+        &_white {
+            width: 642px;
+            font-size: 17px;
+        }
+    }
 }

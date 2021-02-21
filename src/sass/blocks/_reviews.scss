@@ -1,0 +1,26 @@
+.reviews {
+    position: relative;
+    min-height: 470px;
+    padding: 51px 0 65px 0;
+    .slick-arrow {
+        position: absolute;
+        top: 12%;
+        border: none;
+        background-color: $white-color;
+        &:active, &:focus {
+            outline: none;
+            border: none;
+        }
+        img {
+            width: 14px;
+            height: 46px;
+        }
+    }
+    .slick-prev {
+        left: 41%;
+        z-index: 2;
+    }
+    .slick-next {
+        right: 41%;
+    }
+}

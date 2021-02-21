@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="width:100%;height:0;position:absolute;overflow:hidden;">
+  <defs>
+<symbol viewBox="0 0 1024 1024" aria-labelledby="azsi-ant-caret-circle-o-up-title" id="si-ant-caret-circle-o-up"><title id="azsi-ant-caret-circle-o-up-title">icon caret-circle-o-up</title><path d="M512 64q91 0 174 35 81 34 143 96t96 143q35 83 35 174t-35 174q-34 81-96 143t-143 96q-83 35-174 35t-174-35q-81-34-143-96T99 686q-35-83-35-174t35-174q34-81 96-143t143-96q83-35 174-35zm0-64Q373 0 255 68.5T68.5 255 0 512t68.5 257T255 955.5t257 68.5 257-68.5T955.5 769t68.5-257-68.5-257T769 68.5 512 0zm286 639H226q-14 0-19.5-13t4.5-24l285-305q7-6 16-6t16 6l285 305q10 11 4.5 24T798 639z"/></symbol>
+<symbol viewBox="0 0 1030 638" aria-labelledby="bfsi-ant-caret-up-title" id="si-ant-caret-up"><title id="bfsi-ant-caret-up-title">icon caret-up</title><path d="M1017 570L541 12Q530 0 515 0t-26 12L13 570q-16 19-7 43.5T39 638h952q24 0 33-24.5t-7-43.5z"/></symbol>
+  </defs>
+</svg>

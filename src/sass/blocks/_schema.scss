@@ -1,0 +1,16 @@
+.schema {
+    min-height: 454px;
+    background-color: #f3f3f3;
+    padding: 51px 0 46px 0;
+    &__items {
+        margin: 0 auto;
+        margin-top: 29px;
+    }
+}
+@media (max-width: 1201px) {
+    .schema {
+        &__items {
+            width: 800px;
+        }
+    }
+}
