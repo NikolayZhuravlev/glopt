@@ -1,0 +1,77 @@
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 776px) {
+    .hamburger {
+        display: block;
+        z-index: 3;
+        background-color: $main-color;
+        position: fixed;
+        width: 45px;
+        height: 45px;
+        top: 32px;
+        right: 17px;
+        border-radius: 100%;
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            padding: 0;
+            left: -100%;
+            width: 80%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+            transition: 0.7s all;
+            li {
+                list-style-type: none;
+                a {
+                    color: $white-color;
+                    font-size: 25px;
+                    font-weight: 400;
+                }
+                a:hover {
+                    color: $main-color; 
+                }
+            } 
+            &_active {
+                left: 0;
+            }
+        }
+        &__hamburger {
+            display: block;
+            position: absolute;
+            width: 30px;
+            top: 24px;
+            right: 8px;
+            transform: translateY(-50%);
+            span {
+                display: block;
+                background-color: $white-color;
+                height: 2px;
+                width: 100%;
+                margin-bottom: 2px;
+                transition: 0.5s all;
+            }
+            &_active {
+                top: 19px;
+                span {
+                    margin-bottom: -2px;
+                    &:nth-child(1) {
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+}

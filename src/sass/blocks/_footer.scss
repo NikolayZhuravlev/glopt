@@ -1,6 +1,6 @@
 .footer {
     margin-top: -10px;
-    min-height: 201px;
+    min-height: 143px;
     padding: 24px 0 28px 0;
     background-color: #25333c;
     &__wrapper {
@@ -24,17 +24,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-size: 13px;
+        font-weight: 300;
     }
     &__year {
         opacity: 0.6;
-        font-size: 13px;
-        font-weight: 300;
         color: #ffffff;
     }
     &__politic {
         padding-right: 190px;
-        font-size: 13px;
-        font-weight: 300;
         text-decoration: underline;
         color: $main-color;
         cursor: pointer;
@@ -43,9 +41,7 @@
         position: relative;
         padding-right: 40px;
         opacity: 0.6;
-        font-size: 13px;
         line-height: 17px;
-        font-weight: 300;
         color: #ffffff;
         img {
             position: absolute;
@@ -57,5 +53,30 @@
 @media (max-width: 1201px) {
     .footer__wrapper {
         width: 900px;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer__wrapper {
+        width: 700px;
+    }
+}
+
+@media (max-width: 776px) {
+    .footer {
+        padding: 15px 0 15px 0;
+        &__wrapper {
+            width: 90%;
+        }
+        &__devider {
+            margin-top: 15px;
+        }
+        &__bottom {
+            margin-top: 18px;
+            font-size: 11px;
+        }
+        &__politic {
+            padding-right: 0;
+        }
     }
 }

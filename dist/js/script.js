@@ -6,17 +6,18 @@ $(document).ready(function(){
         slidesToShow: 3,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrows/arrowLeft.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/arrows/arrowRight.png"></button>',
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2500,
         pauseOnHover: true,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 991,
             settings: {
-              arrows: false,
+              arrows: true,
               centerMode: true,
               centerPadding: '40px',
-              slidesToShow: 3
+              slidesToShow: 1,
+              slidesToScroll: 1
             }
           },
           {
@@ -25,7 +26,8 @@ $(document).ready(function(){
               arrows: false,
               centerMode: true,
               centerPadding: '40px',
-              slidesToShow: 1
+              slidesToShow: 1,
+              slidesToScroll: 1
             }
           }
         ]
@@ -148,3 +150,23 @@ $(document).ready(function(){
 // Инициализация animation library
 
 new WOW().init();
+
+// hamburger
+
+window.addEventListener('DOMContentLoaded', () => {
+  const menu = document.querySelector('.hamburger__menu'),
+  menuItem = document.querySelectorAll('.hamburger__item'),
+  hamburger = document.querySelector('.hamburger__hamburger');
+
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('hamburger__hamburger_active');
+      menu.classList.toggle('hamburger__menu_active');
+  });
+
+  menuItem.forEach(item => {
+      item.addEventListener('click', () => {
+          hamburger.classList.toggle('hamburger__hamburger_active');
+          menu.classList.toggle('hamburger__menu_active');
+      })
+  })
+})

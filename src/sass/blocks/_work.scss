@@ -7,7 +7,7 @@
         justify-content: space-between;
     }
     &__card {
-        width: 360px;
+        width: 32%;
     }
     &__img {
         img {
@@ -17,11 +17,11 @@
     &__descr {
         margin-top: 27px;
         text-align: center;
-        width: 360px;
+        width: 100%;
         font-size: 14px;
         font-weight: 400;
         color: #3a3a3a;
-        line-height: 22px;
+        line-height: 1.5;
         span {
             font-size: 18px;
             font-weight: 700;
@@ -33,15 +33,40 @@
 
 @media (max-width: 1201px) {
     .work {
-        &__card {
-            width: 275px;
-        }
         &__descr {
-            width: 275px;
             font-size: 13px;
             span {
                 font-size: 17px;
             }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .work {
+        &__descr {
+            font-size: 11px;
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 776px) {
+    .work {
+        &__cards {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__card {
+            width: 55%;
+            margin-bottom: 20px;
+        }
+        &__descr {
+            margin-top: 0;
+            padding: 10px 7px;
+            background-color: rgba($color: #6554b3, $alpha: .2)
         }
     }
 }

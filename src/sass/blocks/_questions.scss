@@ -39,3 +39,17 @@
         }
     }
 }
+
+@media (max-width: 776px) {
+    .questions {
+        &__title {
+            font-size: 18px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+        &__form {
+            width: 90%;
+        }
+    }
+}

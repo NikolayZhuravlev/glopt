@@ -23,6 +23,9 @@
         font-size: 15px;
         font-weight: 700;
     }
+    &_form {
+        width: 180px;
+    }
     &_price {
         position: absolute;
         bottom: 22px;
@@ -40,6 +43,29 @@
             width: 210px;
             height: 45px;
             font-size: 15px;
+        }
+        &_form {
+            width: 180px;
+            height: 45px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .button {
+        width: 115px;
+        height: 26px;
+        font-size: 10px;
+        &_center {
+            width: 180px;
+            height: 35px;
+            font-size: 13px;
+        }
+        &_form {
+            width: 180px;
+            height: 45px;
+            font-size: 12px;
         }
     }
 }

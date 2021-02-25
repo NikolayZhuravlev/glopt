@@ -19,20 +19,19 @@
     background-color: $main-color;
 }
 .descr {
-    width: 880px;
+    width: 75%;
     margin: 0 auto;
     margin-top: 17px;
     font-size: 21px;
-    line-height: 24px;
+    line-height: 1.5;
     font-weight: 400;
     color: #2e2e2e;
     text-align: center;
     &_white {
-        width: 1010px;
+        width: 90%;
         color: $white-color;
         font-family: Roboto;
         font-size: 19px;
-        line-height: 27px;
     }
 }
 
@@ -43,8 +42,32 @@
     .descr {
         font-size: 20px;
         &_white {
-            width: 642px;
             font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .title {
+        font-size: 19px;
+    }
+    .descr {
+        font-size: 15px;
+        &_white {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 776px) {
+    .title {
+        font-size: 16px;
+    }
+    .descr {
+        font-size: 13px;
+        &_white {
+            width: 68%;
+            font-size: 13px;
         }
     }
 }

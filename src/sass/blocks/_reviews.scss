@@ -24,3 +24,14 @@
         right: 41%;
     }
 }
+
+@media (max-width: 991px) {
+    .reviews {
+        .slick-prev {
+            left: 35%;
+        } 
+        .slick-next {
+            right: 35%;
+        }
+    }
+}

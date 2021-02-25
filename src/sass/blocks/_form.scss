@@ -70,7 +70,6 @@
             } 
         }
     } 
-
     &__button {
         margin: 0 auto;
         margin-top: 20px;
@@ -101,6 +100,15 @@
             input {
                 width: 400px;
             }
+        }
+    }
+}
+
+@media (max-width: 776px) {
+    .form {
+        width: 100%;
+        &__header {
+            font-size: 22px;
         }
     }
 }

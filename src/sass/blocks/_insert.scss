@@ -1,5 +1,5 @@
 .insert {
-    min-height: 325px;
+    min-height: 200px;
     padding: 58px 0 75px 0;
     background: url(../img/bg/bg_s3.jpg) center (center/cover) no-repeat;
     box-shadow: inset 860px 150px 100px 0 rgba(35, 30, 44, 0.4), inset 0 -150px 70px 50px rgba(196, 188, 209, 0.4);
@@ -20,7 +20,7 @@
     }
 }
 .insert_manager {
-    height: 342px;
+    min-height: 286px;
     padding: 58px 0 75px 0;
     background: url(../img/bg/bg_s5.jpg) center (center/cover) no-repeat;
     box-shadow: inset 860px 150px 100px 0 rgba(35, 30, 44, 0.4), inset 0 -150px 70px 50px rgba(196, 188, 209, 0.4);
@@ -28,7 +28,19 @@
 
 @media (max-width: 1201px) {
     .insert {
-        padding: 50px 0 60px 0;
+        padding: 40px 0 50px 0;
+        &__img {
+            width: 80px;
+            height: 80px;
+            img {
+                margin: 15px 0 15px 0;
+                width: 40px;
+                height: 42px;
+            }
+        }
+    }
+    .insert_manager {
+        padding: 40px 0 50px 0;
     }
 }
 

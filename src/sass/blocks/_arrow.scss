@@ -35,3 +35,9 @@
 	border-width: 22px;
 	margin-top: -1px;
 }
+
+@media ( max-width: 776px) {
+    .arrow {
+        width: 205px;
+    }
+}
