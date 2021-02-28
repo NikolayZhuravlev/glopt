@@ -1,5 +1,5 @@
 .questions {
-    min-height: 438px;
+    min-height: 373px;
     background: url(../img/bg/4-layers.jpg) center (center/cover) no-repeat;
     padding: 62px 0 79px 0;
     &__form {
@@ -42,6 +42,7 @@
 
 @media (max-width: 776px) {
     .questions {
+        padding: 40px 0 35px 0;
         &__title {
             font-size: 18px;
         }
@@ -50,6 +51,22 @@
         }
         &__form {
             width: 90%;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .questions {
+        &__header {
+            height: 56px;
+            padding-top: 13px;
+        }
+        &__title {
+            font-size: 15px;
+        }
+        &__descr {
+            font-size: 13px;
+            margin-top: 3px;
         }
     }
 }

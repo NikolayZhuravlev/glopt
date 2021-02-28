@@ -154,11 +154,17 @@
     .carousel__title {
         margin-top: 14px;
         font-size: 16px;
+        @media (max-width: 575px) {
+            font-size: 14px;
+        }
     }
     .carousel__descr {
         margin-top: 2px;
         padding: 0;
         font-size: 14px;
+        @media (max-width: 575px) {
+            font-size: 12px;
+        }
     }
     img {
         width: 114px;

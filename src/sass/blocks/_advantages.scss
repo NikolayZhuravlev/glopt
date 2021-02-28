@@ -30,7 +30,7 @@
             font-size: 16px;
             font-weight: 700;
             color: $main-color;
-            padding-bottom: 13px;
+            line-height: 1.7;
         }
     }
 }
@@ -70,7 +70,7 @@
 }
 
 @media (max-width: 776px) {
-    .advantages{
+    .advantages {
         &__wrapper {
             display: flex;
             flex-direction: column;
@@ -82,11 +82,19 @@
         &__img {
             margin-right: 23px;
         }
-        // &__descr {
-        //     font-size: 13px;
-        //     span {
-        //         font-size: 15px;
-        //     }
-        // }
+    }
+}
+
+@media (max-width: 575px) {
+    .advantages {
+        padding-top: 25px;
+        padding-bottom: 0;
+        &__icon {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__descr {
+            text-align: center;
+        }
     }
 }

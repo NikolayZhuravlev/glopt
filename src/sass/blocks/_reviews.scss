@@ -28,10 +28,22 @@
 @media (max-width: 991px) {
     .reviews {
         .slick-prev {
-            left: 35%;
+            left: 34%;
         } 
         .slick-next {
-            right: 35%;
+            right: 34%;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .reviews {
+        padding: 30px 15px 10px;
+        .slick-prev {
+            left: 28%;
+        } 
+        .slick-next {
+            right: 28%;
         }
     }
 }

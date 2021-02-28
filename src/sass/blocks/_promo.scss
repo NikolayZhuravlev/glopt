@@ -107,3 +107,19 @@
         }
     }
 }
+
+
+@media (max-width: 575px) {
+    .promo {
+        &__header {
+            font-size: 13px;
+        }
+        &__subheader {
+            margin-top: 10px;
+            font-size: 19px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+    }
+}

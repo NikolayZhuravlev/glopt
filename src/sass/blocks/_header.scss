@@ -115,7 +115,7 @@
     }
 }
 
-@media (max-width: 776px){
+@media (max-width: 776px) {
     .header {
         margin-top: 8px;
         justify-content: space-around;
@@ -126,10 +126,21 @@
             margin-right: 9px;
             font-size: 12px;
         }
-        // &__contacts {
-        //     margin-right: 40px;
-        //     flex-direction: row;
-        //     width: 260px;
-        // }
+        &__contacts {
+            &_head {
+                margin-right: 30px;
+            }
+        }
+        &__phone {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header__descr {
+        span {
+            display: none;
+        }
     }
 }

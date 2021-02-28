@@ -55,19 +55,20 @@
         flex-direction: column;
         text-align: center;
         input {
+            padding-left: 26px;
             width: 270px;
             height: 47px;
-            padding-left: 26px;
             border: 1px solid rgba(0,0,0,0.2);
             border-radius: 25px;
         }
-        &_4 {
+        textarea {
+            padding-left: 26px;
             margin-top: 8px;
-            input {
-                width: 822px;
-                height: 73px;
-                border-radius: 10px; 
-            } 
+            width: 820px;
+            height: 73px;
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 10px;
+            resize: none;
         }
     } 
     &__button {
@@ -97,8 +98,12 @@
         &__input {
             margin: 0 auto;
             margin-top: 10px;
+            width: 400px;
             input {
-                width: 400px;
+                width: 100%;
+            }
+            textarea {
+                width: 100%;
             }
         }
     }
@@ -106,9 +111,64 @@
 
 @media (max-width: 776px) {
     .form {
-        width: 100%;
+        width: 460px;
         &__header {
             font-size: 22px;
         }
+        &__input {
+            width: 350px;
+            font-size: 13px;
+            input {
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .form {
+        width: 80%;
+        margin-top: 40px;
+        &__form {
+            margin-top: 40px;
+            &_questions {
+                margin-top: 0;
+            }
+        }
+        &__wrapper {
+            padding: 5px 0 30px;
+            &_questions {
+                padding-bottom: 15px;
+            }
+        }
+        &__input {
+            width: 80%;
+            font-size: 12px;
+            input {
+                padding-left: 15px;
+                height: 29px;
+            }
+            textarea {
+                padding-left: 15px;
+            }
+        }
+        &__header {
+            margin-bottom: 50px;
+            font-size: 15px;
+        }
+        &__img {
+            width: 74px;
+            height: 74px;
+        }
+        &__button {
+            margin-top: 15px;
+            &_paddingWhite {
+                bottom: -16px;
+            }
+        }
+    }
+    
+    .error {
+        font-size: 12px;
     }
 }

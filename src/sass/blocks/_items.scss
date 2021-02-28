@@ -11,6 +11,12 @@
         font-weight: 300;
         color: $white-color;
         margin-right: 33px;
+        &:nth-child(4) {
+            margin-right: 0;
+        }
+        &:nth-child(7) {
+            margin-right: 0;
+        }
         &_last {
             margin-right: 0;
         }
@@ -23,6 +29,7 @@
             font-size: 16px;
             font-weight: 700;
             color: $main-color;
+            line-height: 1.7;
         }
         img {
             margin-bottom: 15px;
@@ -31,12 +38,6 @@
     // &__animated {
     //     animation: delivering 3s linear infinite normal;
     // }
-    &__item:nth-child(4) {
-        margin-right: 0;
-    }
-    &__item:nth-child(7) {
-        margin-right: 0;
-    }
 }
 
 @media (max-width: 1201px) {
@@ -54,8 +55,17 @@
     .items {
         &__item {
             width: 165px;
-            font-size: 11px;
-            margin-right: 13px;
+            font-size: 12px;
+            margin: 0 7px 20px 7px;
+            &:nth-child(4) {
+                margin-right: 7px;
+            }
+            &:nth-child(7) {
+                margin-right: 7px;
+            }
+            span {
+                font-size: 14px;
+            }
             img {
                 margin-bottom: 10px;
                 width: 50px;

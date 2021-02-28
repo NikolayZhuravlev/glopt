@@ -80,3 +80,22 @@
         }
     }
 }
+
+@media (max-width: 575px) {
+    .footer {
+        &__bottom {
+            margin-top: 6px;
+            flex-direction: column-reverse;
+        }
+        &__created {
+            padding-right: 37px;
+            line-height: 14px;
+            margin-top: 12px;
+            img {
+                top: -12px;
+                right: 9px;
+                width: 25px;
+            }
+        }
+    }
+}

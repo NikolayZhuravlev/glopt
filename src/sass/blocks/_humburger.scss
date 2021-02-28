@@ -75,3 +75,19 @@
         }
     }
 }
+
+@media (max-width: 575px) {
+    .hamburger {
+        right: 10px;
+        width: 35px;
+        height: 35px;
+        &__hamburger {
+            width: 24px;
+            top: 19px;
+            right: 6px;
+            &_active {
+                top: 14px;
+            }
+        }
+    }
+}

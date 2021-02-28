@@ -41,3 +41,26 @@
         width: 205px;
     }
 }
+
+@media ( max-width: 776px) {
+    .arrow {
+        width: 184px;
+        top: 6%;
+        left: 50%;
+        transform: translateX(-50%);
+        &__title {
+            font-size: 14px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+    }
+    .arrow:before {
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        border: 18px solid transparent;
+        border-top-color: white;
+        border-bottom: 0;
+    }
+}

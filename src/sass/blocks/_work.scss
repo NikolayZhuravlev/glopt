@@ -66,7 +66,19 @@
         &__descr {
             margin-top: 0;
             padding: 10px 7px;
-            background-color: rgba($color: #6554b3, $alpha: .2)
+            background-color:#f3f3f3
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .work {
+        padding: 25px 0 10px 0;
+        &__cards {
+            margin-top: 20px;
+        }
+        &__card {
+            width: 80%;
         }
     }
 }
